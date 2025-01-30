@@ -83,7 +83,6 @@ function ShippingCalculator() {
             option.time < min.time ? option : min
         );
 
-        // Weighted scoring: 60% cost + 40% time
         let best = shippingRates.reduce((best, option) => {
             const score = option.cost * 0.6 + option.time * 0.4;
             const bestScore = best.cost * 0.6 + best.time * 0.4;

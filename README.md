@@ -1,8 +1,8 @@
-# React + Vite
+# Shipping Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Implemented with the help of Vite and Contentful APIs
 
-Currently, two official plugins are available:
+## Screenshots:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img src="./public/shipping-calculator-1.png"><br><br>
+<img src="./public/shipping-calculator-2.png"><br><br>
