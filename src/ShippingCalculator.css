@@ -1,0 +1,72 @@
+.calculator-container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    /* margin: auto; */
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* background-color: white; */
+    width: 100%;
+    /* max-width: 600px; */
+}
+
+/* Title styling */
+.calculator-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Field container spacing */
+.field-container {
+    margin-top: 1rem;
+}
+
+/* Label styling */
+.label {
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+}
+
+/* Input select and text field styling */
+.input-select,
+.input-text {
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    margin-top: 0.5rem;
+}
+
+/* Button container styling */
+.button-container {
+    margin-top: 1rem;
+}
+
+/* Button styling */
+.button-calculate {
+    background-color: #3490dc;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    border: none;
+}
+
+.button-calculate:hover {
+    background-color: #2779bd;
+}
+
+/* Results container styling */
+.results-container {
+    margin-top: 2rem;
+}
+
+/* Results title styling */
+.results-title {
+    font-weight: 600;
+}
