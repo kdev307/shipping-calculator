@@ -118,70 +118,71 @@ function ShippingCalculator() {
             <h2 className="calculator-title">Shipping Calculator</h2>
 
             {/* From City Select */}
-            <div className="field-container">
-                <label htmlFor="fromCity" className="label">
-                    From City:
-                </label>
-                <select
-                    id="fromCity"
-                    value={fromCity}
-                    onChange={(e) => setFromCity(e.target.value)}
-                    className="input-select"
-                >
-                    <option value="">Select City</option>
-                    {cities.map((city) => (
-                        <option key={city.id} value={city.name}>
-                            {city.name}
-                        </option>
-                    ))}
-                </select>
-            </div>
+            <div className="form-container">
+                <div className="field-container">
+                    <label htmlFor="fromCity" className="label">
+                        From City:
+                    </label>
+                    <select
+                        id="fromCity"
+                        value={fromCity}
+                        onChange={(e) => setFromCity(e.target.value)}
+                        className="input-select"
+                    >
+                        <option value="">Select City</option>
+                        {cities.map((city) => (
+                            <option key={city.id} value={city.name}>
+                                {city.name}
+                            </option>
+                        ))}
+                    </select>
+                </div>
 
-            {/* To City Input */}
-            <div className="field-container">
-                <label htmlFor="toCity" className="label">
-                    To City:
-                </label>
-                <input
-                    type="text"
-                    id="toCity"
-                    value={toCity}
-                    onChange={(e) => setToCity(e.target.value)}
-                    className="input-text"
-                    placeholder="Enter destination city"
-                />
-            </div>
+                {/* To City Input */}
+                <div className="field-container">
+                    <label htmlFor="toCity" className="label">
+                        To City:
+                    </label>
+                    <input
+                        type="text"
+                        id="toCity"
+                        value={toCity}
+                        onChange={(e) => setToCity(e.target.value)}
+                        className="input-text"
+                        placeholder="Enter destination city"
+                    />
+                </div>
 
-            {/* Shipping Method Select */}
-            {/* <div className="field-container">
+                {/* Shipping Method Select */}
+                {/* <div className="field-container">
                 <label htmlFor="method" className="label">
-                    Shipping Method:
+                Shipping Method:
                 </label>
                 <select
-                    id="method"
-                    value={method}
-                    onChange={(e) => setMethod(e.target.value)}
-                    className="input-select"
+                id="method"
+                value={method}
+                onChange={(e) => setMethod(e.target.value)}
+                className="input-select"
                 >
-                    <option value="">Select Method</option>
-                    {shippingMethods.map((method, index) => (
-                        <option key={index} value={method}>
-                            {method}
-                        </option>
+                <option value="">Select Method</option>
+                {shippingMethods.map((method, index) => (
+                    <option key={index} value={method}>
+                    {method}
+                    </option>
                     ))}
-                </select>
-            </div> */}
+                    </select>
+                    </div> */}
 
-            {/* Calculate Button */}
-            <div className="button-container">
-                <button
-                    onClick={fetchShippingRates}
-                    className="button-calculate"
-                >
-                    {loading ? "Calculating..." : "Calculate Shipping"}
-                </button>
+                {/* Calculate Button */}
+                <div className="button-container">
+                    <button
+                        onClick={fetchShippingRates}
+                        className="button-calculate"
+                    >
+                        {loading ? "Calculating..." : "Calculate Shipping"}
+                    </button>
+                </div>
             </div>
-
             {/* Display Results */}
             {results && (
                 <div className="results-container">
